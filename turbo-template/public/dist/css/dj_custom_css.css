@@ -1,0 +1,283 @@
+#burger_menu_links {
+    font-family: monospace;
+}
+
+#navbarCollapse li a {
+    font-family: monospace;
+    color: rgb(252, 1, 1);
+    font-size: x-large;
+}
+
+#navbarCollapse li a:hover {
+    text-decoration: underline;
+}
+
+.link-color-1 {
+    color: white;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8.5rem!important;
+}
+
+#intro img {
+    width: 160px;
+    border-radius: 50%
+}
+
+#sub-title1 {
+    color: white;
+    font-family: monospace;
+    font-size: xxx-large;
+    position: relative;
+    animation: moveInFromTop;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+.tsar {
+    margin-top: 4rem;
+}
+
+#sub-title2 {
+    font-family: monospace;
+    color: red;
+    position: relative;
+    animation-name: moveInFromLeft;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#sub-title3 {
+    font-family: monospace;
+    color: red;
+    position: relative;
+    animation-name: moveInFromLeft;
+    animation-duration: 2.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#sub-title4 {
+    font-family: monospace;
+    color: red;
+    position: relative;
+    animation-name: moveInFromLeft;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#sub-title5 {
+    font-family: monospace;
+    color: red;
+    position: relative;
+    animation-name: moveInFromLeft;
+    animation-duration: 3.75s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#main-btn {
+    animation-name: moveInBottom;
+    animation-duration: 5s;
+}
+
+#tech_skills p {
+    font-family: monospace;
+    color: brown;
+}
+
+#my-projects {
+    background-color: darkred;
+}
+
+#my-projects h1 {
+    color: white;
+    font-family: monospace;
+}
+
+#my-projects h3 {
+    color: white;
+    font-family: monospace;
+}
+
+#my-projects p {
+    color: black;
+    font-family: monospace;
+}
+
+#my-projects h5 {
+    color: darkred;
+}
+
+#tech-skills {
+    color: whitesmoke;
+}
+
+#tech-skills h1 {
+    font-family: monospace;
+}
+
+#tech-skills p {
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: small;
+}
+
+#contact-form {
+    background-color: darkred;
+}
+
+#contact-form h1 {
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+#contact-form p {
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+#contact-form button {
+    background-color: black;
+}
+
+#contact-ctx h3 {
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+.gradient-div-red {
+    width: 100%;
+    background-image: linear-gradient(rgba(51, 7, 7, 0.568), rgba(190, 8, 8, 0.5), rgba(241, 4, 4, 0.7));
+}
+
+#mobile-menu-mod {
+    margin-top: 4.5rem;
+}
+
+#modal-btn {
+    background-color: inherit;
+    margin-top: .75rem;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-delay: 5.25s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+#modal-btn:hover {
+    /* transform: rotateY(180deg); */
+    background-color: crimson;
+    color: black;
+}
+
+/* KEYFRAMES */
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveInFromTop {
+    0% {
+        top: -175px
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        left: -2000px
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 675px) {
+    #hero_section h3 {
+        padding: 0px 5px 0px 5px;
+        font-size: 1.25rem;
+        line-height: 50px;
+        font-weight: 600;
+        margin-top: 9rem;
+    }
+    #sub-title1 {
+        font-size: small;
+        margin-top: 5rem;
+    }
+    #sub-title2 {
+        font-size: small;
+    }
+    #intro {
+        margin-top: 0 !important;
+    }
+    #intro h4 {
+        font-size: medium;
+    }
+    .mobile-hide {
+        opacity: 0 !important;
+    }
+    #contact-form button {
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    #navbarCollapse li a {
+        font-size: x-small;
+        text-decoration: underline;
+    }
+}
+
+.lead {
+    font-size: larger;
+}
+
+.uline {
+    text-decoration: underline;
+}
+
+/* MODAL STYLES */
+
+.modal-footer button {
+    background-color: darkred;
+}
+
+.modal-body h5 {
+    font-family: monospace;
+    color: darkred;
+    font-size: x-large;
+}
+
+.modal-body p {
+    font-family: monospace;
+    color: black;
+    font-size: large;
+}
+
+.modal-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+#social-media {
+    color: darkred;
+}
