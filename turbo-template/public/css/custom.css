@@ -40,12 +40,6 @@ p {
     color: #818385;
 }
 
-#hero_section h1 {
-    font-size: 4rem;
-    line-height: 70px;
-    font-weight: 600;
-}
-
 .section-title {
     font-weight: 400;
     font-size: 3rem;
@@ -535,11 +529,6 @@ footer {
 
 .header-row {
     margin: 4.5rem 0rem;
-}
-
-.gradient-div {
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
 }
 
 .text-small {
