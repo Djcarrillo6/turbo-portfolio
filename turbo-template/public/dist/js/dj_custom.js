@@ -27,3 +27,15 @@ function createBoxes() {
 };
 
 createBoxes();
+
+// Mobile Navbar JS
+const mobileNavbar = document.querySelector('.mobile-navbar');
+window.addEventListener('scroll', fixNav);
+
+function fixNav() {
+    if (window.scrollY > mobileNavbar.offsetHeight + 150) {
+        mobileNavbar.classList.add('active');
+    } else {
+        mobileNavbar.classList.remove('active');
+    };
+};

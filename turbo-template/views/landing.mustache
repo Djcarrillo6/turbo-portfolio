@@ -9,12 +9,9 @@
   <body>
     <div class="blocks-page">
       <section id="hero_section">
-
         <button class="nav-btn open-btn">
             <i class="fas fa-bars"></i>
         </button>
-
-
 
         <div class="nav nav-black">
           <div class="nav nav-red">
@@ -23,10 +20,7 @@
                 <i class="fas fa-times"></i>
               </button>
 
-               
-
-
-              <ul class="list">
+              <ul class="list nav-links">
                 {{#page.header_nav.nav1.show_or_hide}}
                             <li class="nav-item">
                                 <a class="nav-link" href="/#my-projects">{{page.header_nav.nav1.text}}</a>
@@ -50,24 +44,44 @@
                                 <a class="nav-link"  href="/#contact-form">{{page.header_nav.nav4.text}}</a>
                             </li>
                             {{/page.header_nav.nav4.show_or_hide}}
-                {{! <li>
-                  <ul>
-                    <li><a href="#">Netflix culture memo</a></li>
-                    <li><a href="#">Work life balance</a></li>
-                    <li><a href="#">Inclusion & diversity</a></li>
-                    <li><a href="#">Blog</a></li>
-                  </ul>
-                </li> }}
               </ul>
             </div>
           </div>
       </div>
 
-
-          
         <div class="animated-gradient-red  py-3">
-
-        <div id="boxes" class="boxes big"></div>
+        <section id="mobile-navbar">
+          <nav class="mobile-navbar">
+            <div class="mobile-navbar-container">
+                <ul>
+                  {{#page.header_nav.nav1.show_or_hide}}
+                              <li class="nav-item">
+                                  <a class="nav-link" href="/#my-projects">{{page.header_nav.nav1.text}}</a>
+                              </li>
+                  {{/page.header_nav.nav1.show_or_hide}}
+  
+                                             {{#page.header_nav.nav2.show_or_hide}}
+                              <li class="nav-item">
+                                  <a class="nav-link"  href="/#tech-skills">{{page.header_nav.nav2.text}}</a>
+                              </li>
+                              {{/page.header_nav.nav2.show_or_hide}}
+  
+                              {{#page.header_nav.nav3.show_or_hide}}
+                              <li class="nav-item">
+                                  <a class="nav-link" target="_blank"  href="https://storage.turbo360.co/my-portfolio-fctgxi/resume-dev.pdf">{{page.header_nav.nav3.text}}</a>
+                              </li>
+                              {{/page.header_nav.nav3.show_or_hide}}
+  
+                              {{#page.header_nav.nav4.show_or_hide}}
+                              <li class="nav-item">
+                                  <a class="nav-link"  href="/#contact-form">{{page.header_nav.nav4.text}}</a>
+                              </li>
+                              {{/page.header_nav.nav4.show_or_hide}}
+                </ul>
+            </div>
+          </nav>
+        </section>
+          <div id="boxes" class="boxes big"></div>
           <h2>{{ page.hero.greeting }}</h2>
         </div>
       </section>
@@ -121,7 +135,7 @@
             </div>
           </div>
 
-          {{! Tech Skills  }}
+          {{! Stacks & Techs  }}
 
           <div id="tech-skills" class="row mt-5">
             {{#page.services}}
