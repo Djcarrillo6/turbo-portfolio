@@ -326,13 +326,11 @@
 
 @media (max-width: 850px) {
     #hero_section h2 {
-        padding: 0px 5px 0px 5px;
-        font-size: 1.25rem;
-        line-height: 50px;
-        font-weight: 600;
+        font-size: .9rem;
+        margin-bottom: 21rem;
     }
     #my-projects h1 {
-        font-size: small;
+        font-size: xx-large;
     }
     #my-projects h3 {
         font-size: small;
@@ -342,6 +340,10 @@
     }
     #tech-skills {
         padding-top: 18rem;
+        margin-top: 17rem;
+    }
+    #tech-skills h1 {
+        padding-top: 5rem;
     }
     #contact-form h1 {
         font-size: small;

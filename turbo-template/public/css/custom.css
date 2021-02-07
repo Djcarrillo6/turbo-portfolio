@@ -584,10 +584,6 @@ footer {
     padding: 6rem 0;
 }
 
-.nav-item {
-    margin-left: 28px;
-}
-
 @media (max-width: 768px) {
     .project .image img {
         height: auto;
@@ -671,5 +667,8 @@ footer {
     .mobile-nav {
         -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.26);
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.26);
+    }
+    .nav-item-m {
+        margin-left: 10px;
     }
 }

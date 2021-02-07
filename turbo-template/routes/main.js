@@ -16,6 +16,12 @@ router.get('/', (req, res) => {
     });
 });
 
+
+router.get('/profile', (req, res) => {
+  const data = req.context;
+  res.render('profile', data);
+});
+
 router.get('/project/:slug', (req, res) => {
   const data = req.context;
   const projectSlug = req.params.slug;
