@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+.row {
+    width: 125%;
+}
+
 #my-projects {
     background-color: darkred;
 }
@@ -32,9 +37,15 @@
     font-family: 'JetBrains Mono', monospace;
 }
 
+#tech-skills h5 {
+    font-family: Oswald;
+    text-decoration: underline;
+    color: red;
+}
+
 #tech-skills p {
     color: whitesmoke;
-    font-family: monospace;
+    font-family: Oswald;
     font-size: larger;
 }
 
